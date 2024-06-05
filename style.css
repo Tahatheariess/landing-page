@@ -1,0 +1,436 @@
+/*  font  family */
+.jost {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    /* my divs bg color */
+    --my-divs-bg-color-green: #1A7473;
+    --my-divs-content-bg-color-yellow: #FFC700;
+    --my-divs-border-color-dark-yellow: #c59f13;
+
+    /* my  fonts family */
+    --my-font-family: "Jost", sans-serif;
+
+    /* my  fonts sizes */
+    --my-sm-font-size: 1.6rem;
+    --my-md-font-size: 2rem;
+    --my-lg-font-size: 3rem;
+    --my-xl-font-size: 3.5rem;
+
+    /* my  fonts line height */
+    --my-xl-font-line-height: 4.5rem;
+    --my-lg-font-line-height: 2.7rem;
+    --my-md-font-line-height: 2.8rem;
+    --my-sm-font-line-height: 1rem;
+
+    /* my  fonts colors */
+    --my-font-color-2: rgb(112, 112, 112);
+    --my-font-color-white: white;
+
+    /* letter spacing */
+    --my-letter-spacing: .5px;
+
+    /* my container mainbox */
+    --my-divs-border-radius: 1rem;
+    --my-divs-padding-sm: 1rem;
+    --my-divs-border: .1rem solid var(--my-divs-border-color);
+    --my-bg-color: var(--my-divs-bg-color);
+
+    --my-transition-on-hov: 0.5s;
+}
+
+/* my css varaibles end*/
+
+
+
+
+
+
+
+
+/* my font sizes according to all screens width code start*/
+
+html {
+    font-size: 62.5%;
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media(max-width:1199px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media(max-width:1000px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .my-nav-inner div {
+        position: relative !important;
+        transform-origin: top;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+}
+
+
+@media (max-width:992px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .my-nav-inner div {
+        position: absolute;
+        left: 1rem;
+        top: 0rem;
+        transform-origin: top;
+        transform: scale(0);
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .my-nav-inner div nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .nav-btn {
+        display: block !important;
+    }
+
+    .my-nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media(max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media(max-width:576px) {
+    html {
+        font-size: 43.75%;
+    }
+}
+
+/* my font sizes according to all screens width code end*/
+
+
+
+
+
+
+
+/* topbar */
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tb-guarantee-text {
+    color: black;
+    font-family: var(--my-font-family);
+    font-size: var(--my-lg-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tb-guarantee-text-3 {
+    color: black;
+    font-family: var(--my-font-family);
+    font-size: var(--my-sm-font-size);
+    text-transform: uppercase;
+}
+
+.tb-guarantee-text-2 {
+    color: black;
+    font-family: var(--my-font-family);
+    font-size: var(--my-md-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: var(--my-sm-font-line-height);
+}
+
+/* topbar end*/
+
+
+
+
+
+
+
+/* navbar start */
+.my-nav {
+    position: relative;
+    background-color: var(--my-divs-bg-color-green);
+    padding: var(--my-divs-padding-sm);
+    transition: var(--my-transition-on-hov);
+}
+
+.nav-text {
+    color: var(--my-font-color-white) !important;
+    font-size: var(--my-sm-font-size) !important;
+    text-transform: uppercase !important;
+    font-family: var(--my-font-family) !important;
+    padding: 1rem 3rem 1rem 0 !important;
+}
+
+#nav-btn {
+    border: none !important;
+    background-color: transparent !important;
+    font-size: var(--my-lg-font-size) !important;
+}
+
+#nav-btn i{
+    color: var(--my-font-color-white) !important;
+}
+
+/* navbar end */
+
+
+
+
+
+
+
+/* container-1 */
+.ctnr-1 {
+    background-color: var(--my-divs-bg-color-green);
+}
+
+.ctnr-1-mb {
+    background-color: var(--my-divs-content-bg-color-yellow);
+    margin-top: 1.5rem;
+}
+
+.ctnr-1-mb-inner {
+    background-color: var(--my-divs-border-color-dark-yellow);
+}
+
+.ctnr-1-mb-text {
+    color: var(--my-font-color-white);
+    font-size: var(--my-md-font-size);
+    font-weight: bold;
+    font-family: var(--my-font-family);
+    text-transform: capitalize;
+}
+
+.ctnr-1-heading {
+    color: var(--my-font-color-white);
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-lg-font-size);
+}
+
+.ctnr-1-heading span,
+.ctnr-2-heading span {
+    color: var(--my-divs-content-bg-color-yellow);
+}
+
+.ctnr-1-btn {
+    background-color: var(--my-divs-border-color-dark-yellow);
+    font-family: var(--my-font-family);
+    color: var(--my-font-color-white);
+    font-size: var(--my-md-font-size);
+    text-transform: capitalize;
+    padding: var(--my-divs-padding-sm);
+    border: none;
+    border-radius: var(--my-divs-border-radius);
+    width: 100%;
+    transition: 0.5s;
+    border: .2rem solid transparent;
+}
+
+.ctnr-1-btn:hover{
+    color: var(--my-font-color-white);
+    background-color: transparent;
+    border: .2rem solid var(--my-font-color-white);
+}
+
+.brand-logo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(58deg) brightness(101%) contrast(102%);
+}
+
+.brand-logo-2 {
+    filter: invert(42%) sepia(6%) saturate(252%) hue-rotate(315deg) brightness(94%) contrast(95%);
+}
+
+.ctnr-1-heading-2 {
+    color: var(--my-font-color-white);
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-md-font-size);
+}
+
+.ctnr-1-heading-des {
+    color: var(--my-font-color-white);
+    font-family: var(--my-font-family);
+    font-size: var(--my-sm-font-size);
+}
+
+/* container-1 end */
+
+
+
+
+
+
+/* container 2 */
+.ctnr-2-heading {
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-lg-font-size);
+}
+
+.ctnr-2-heading-des {
+    font-family: var(--my-font-family);
+    font-size: var(--my-sm-font-size);
+}
+
+/* container 2 end */
+
+
+
+
+
+
+
+
+
+/* container 3 */
+.ctnr-3{
+    background-color: bisque;
+}
+
+.ctnr-3-heading {
+    color: var(--my-divs-content-bg-color-yellow);
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-lg-font-size);
+}
+
+.ctnr-3-heading-2 {
+    color: var(--my-divs-bg-color-green);
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-md-font-size);
+}
+
+.ctnr-3-text{
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-md-font-size);
+}
+
+.ctnr-3-text span{
+    color: var(--my-divs-bg-color-green);
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--my-md-font-size);
+}
+
+.ctnr-3-mb{
+    border-radius: var(--my-divs-border-radius);
+}
+
+.ctnr-3-btn {
+    background-color: transparent;
+    font-family: var(--my-font-family);
+    color: var(--my-divs-bg-color-green);
+    font-size: var(--my-md-font-size);
+    text-transform: capitalize;
+    padding: var(--my-divs-padding-sm);
+    border: .2rem solid var(--my-divs-bg-color-green);
+    border-radius: var(--my-divs-border-radius);
+    width: 100%;
+    transition: 0.5s;
+}
+
+.ctnr-3-btn:hover{
+    color: var(--my-font-color-white);
+    background-color: var(--my-divs-bg-color-green);
+}
+/* container 3 end */
+
+
+
+
+
+
+/* container 4 */
+.ctnr-4-mb-pic img , .ctnr-3-mb-pic img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.ctnr-4-mb:hover .ctnr-4-mb-pic img , .ctnr-3-mb:hover .ctnr-3-mb-pic img{
+    transform: scale(1);
+}
+/* container 4 end */
+
+
+
+
+
+/* footer */
+.footer{
+    background-color: var(--my-divs-bg-color-green);
+}
+
+.footer-page span{
+    color: var(--my-font-color-white);
+    font-family: var(--my-font-family);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--my-md-font-size);
+}
+
+.author {
+    color: var(--my-font-color-white);
+    font-family: var(--my-font-family);
+    font-size: var(--my-sm-font-size);
+}
+/* footer end */
+
+
+.rough {
+    border: .1rem solid black;
+}
+
+html a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.ctnr-padding {
+    padding: 10rem 0;
+}

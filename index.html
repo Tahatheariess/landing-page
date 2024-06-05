@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+
+    <!-- my css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- my fontawsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- my hover effects link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- my google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- my bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- my jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--my aos library link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container topbar py-5">
+        <div class="row topbar-inner">
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-3 col-3">
+                <img src="img/sugar balace logo.png" class="w-100" alt="logo">
+            </div>
+
+            <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-9">
+                <div class="row">
+                    <div class="col-6 tb-guarantee-sec">
+                        <div class="row">
+                            <div class="col-3 d-flex justify-content-center aling-items-center">
+                                <img src="img/check img 2.png" class="w-100" alt="check img">
+                            </div>
+
+                            <div class="col-9">
+                                <span class="tb-guarantee-text">180</span>
+                                <span class="tb-guarantee-text-3">day</span>
+                                <span class="tb-guarantee-text-2">guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 tb-guarantee-sec">
+                        <div class="row">
+                            <div class="col-3 d-flex justify-content-center aling-items-center">
+                                <img src="img/global pic 2.png" class="w-100" alt="global img">
+                            </div>
+
+                            <div class="col-9 mt-3">
+                                <span class="tb-guarantee-text-3">global free</span>
+                                <span class="tb-guarantee-text-2">shipping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md my-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">about</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="container my-nav">
+        <div class="row">
+            <div class="col-lg-12 col-md-11 col-sm-11 col-10 my-nav-inner">
+                <div class="d-flex justify-content-between aling-items-center">
+                    <nav>
+                        <a href="index.html">
+                            <p class="nav-text">home</p>
+                        </a>
+
+                        <a href="about.html">
+                            <p class="nav-text">about</p>
+                        </a>
+
+                        <a href="products.html">
+                            <p class="nav-text">products</p>
+                        </a>
+
+                        <a href="contact.html">
+                            <p class="nav-text">contact</p>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-1 col-sm-1 col-2">
+                <button class="nav-btn hide">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid hero-sec mt-5">
+        <img src="img/hero pic.webp" class="w-100" alt="hero pic" height="700rem">
+    </div>
+
+    <div class="container-fluid ctnr-1 ctnr-padding">
+        <div class="container">
+            <div class="row d-flex justify-content-center aling-items-center">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-12 ctnr-1-mb p-4">
+                        <div class="col-12 ctnr-1-mb-inner d-flex justify-content-center aling-items-center p-4">
+                            <p class="ctnr-1-mb-text">20%</p>
+                        </div>
+
+                        <p class="ctnr-1-mb-text text-center mt-4">sugar</p>
+                    </div>
+                </div>
+
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-12 ctnr-1-mb p-4">
+                        <div class="col-12 ctnr-1-mb-inner d-flex justify-content-center aling-items-center p-4">
+                            <p class="ctnr-1-mb-text">10%</p>
+                        </div>
+
+                        <p class="ctnr-1-mb-text text-center mt-4">chlorine</p>
+                    </div>
+                </div>
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-12 ctnr-1-mb p-4">
+                        <div class="col-12 ctnr-1-mb-inner d-flex justify-content-center aling-items-center p-4">
+                            <p class="ctnr-1-mb-text">30%</p>
+                        </div>
+
+                        <p class="ctnr-1-mb-text text-center mt-4">chloride</p>
+                    </div>
+                </div>
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-12 ctnr-1-mb p-4">
+                        <div class="col-12 ctnr-1-mb-inner d-flex justify-content-center aling-items-center p-4">
+                            <p class="ctnr-1-mb-text">40%</p>
+                        </div>
+
+                        <p class="ctnr-1-mb-text text-center mt-4">aluminium</p>
+                    </div>
+                </div>
+
+                <p class="ctnr-1-heading mt-5 text-center">save upto $695 and create quick <span>sugar balance</span>
+                    order today</p>
+
+
+                <div class="col-3 mx-auto mt-5">
+                    <button class="ctnr-1-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>order now</span>
+                    </button>
+                </div>
+
+                <p class="ctnr-1-heading mt-5 text-center"><span>sugar balance</span> official site - 100% original</p>
+
+                <div class="col-12">
+                    <div class="row d-flex justify-content-center aling-items-center">
+                        <div class="col-2">
+                            <img src="img/brand_logo.png" class="w-100 brand-logo" alt="brand logo">
+                        </div>
+
+                        <div class="col-2">
+                            <img src="img/brand logo 2.png" class="w-100 brand-logo" alt="brand logo">
+                        </div>
+
+                        <div class="col-2">
+                            <img src="img/brand logo 3.png" class="w-100 brand-logo" alt="brand logo">
+                        </div>
+
+                        <div class="col-2">
+                            <img src="img/brand logo 4.png" class="w-100 brand-logo" alt="brand logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 mt-5">
+                    <div class="col-12">
+                        <div class="col-8 mx-auto">
+                            <img src="img/medical eqmt.png" class="w-100 brand-logo" alt="mediacal euipment">
+                        </div>
+
+                        <p class="ctnr-1-heading-2">Lorem ipsum dolor sit amet.</p>
+                        <p class="ctnr-1-heading-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                            sapiente ut vel, libero perspiciatis assumenda esse sit nobis repudiandae provident!</p>
+                    </div>
+                </div>
+
+                <div class="col-4 mt-5">
+                    <div class="col-12">
+                        <div class="col-6 mx-auto">
+                            <img src="img/medical eqmt 2.png" class="w-100 brand-logo" alt="mediacal euipment">
+                        </div>
+
+                        <p class="ctnr-1-heading-2">Lorem ipsum dolor sit amet.</p>
+                        <p class="ctnr-1-heading-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                            sapiente ut vel, libero perspiciatis assumenda esse sit nobis repudiandae provident!</p>
+                    </div>
+                </div>
+
+                <div class="col-4 mt-5">
+                    <div class="col-12">
+                        <div class="col-8 mx-auto">
+                            <img src="img/medical eqmt 3.png" class="w-100 brand-logo" alt="mediacal euipment">
+                        </div>
+
+                        <p class="ctnr-1-heading-2">Lorem ipsum dolor sit amet.</p>
+                        <p class="ctnr-1-heading-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                            sapiente ut vel, libero perspiciatis assumenda esse sit nobis repudiandae provident!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ctnr-2 ctnr-padding">
+        <p class="ctnr-2-heading mt-5"><span>sugar balance</span> how it works?</p>
+        <p class="ctnr-2-heading-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, molestias. Pariatur
+            molestias corrupti sunt dolor. Aliquam ut fugiat vel autem? Ad, eius, tenetur consectetur doloremque, magnam
+            officia earum tempore iure suscipit ducimus consequatur maxime eligendi facere quo? Adipisci excepturi rem,
+            maxime recusandae soluta ipsum error, blanditiis voluptatem aut molestias dolores amet? Iure quasi odit,
+            ipsa delectus libero aperiam quae saepe! Quibusdam tempora magnam impedit doloribus iusto asperiores
+            repellat temporibus fugit? Nisi reiciendis, officiis sed ratione ullam numquam molestias optio adipisci
+            voluptates quia in, inventore fuga, sint rem beatae porro laudantium accusamus excepturi ea non saepe.
+            Consequuntur placeat quos unde deserunt.</p>
+
+        <p class="ctnr-2-heading mt-5">why <span>sugar balance?</span></p>
+        <p class="ctnr-2-heading-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, molestias. Pariatur
+            molestias corrupti sunt dolor. Aliquam ut fugiat vel autem? Ad, eius, tenetur consectetur doloremque, magnam
+            officia earum tempore iure suscipit ducimus consequatur maxime eligendi facere quo? Adipisci excepturi rem,
+            maxime recusandae soluta ipsum error, blanditiis voluptatem aut molestias dolores amet? Iure quasi odit,
+            ipsa delectus libero aperiam quae saepe! Quibusdam tempora magnam impedit doloribus iusto asperiores
+            repellat temporibus fugit? Nisi reiciendis, officiis sed ratione ullam numquam molestias optio adipisci
+            voluptates quia in, inventore fuga, sint rem beatae porro laudantium accusamus excepturi ea non saepe.
+            Consequuntur placeat quos unde deserunt.</p>
+
+        <p class="ctnr-2-heading mt-5">hoe do | <span>sugar balance?</span></p>
+        <p class="ctnr-2-heading-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi voluptatum
+            aliquid qui distinctio ipsa omnis laborum culpa, iure facere totam explicabo officia nostrum vitae tenetur
+            non porro, reprehenderit ad.</p>
+
+        <div class="col-12">
+            <div class="row d-flex justify-content-center aling-items-center">
+                <div class="col-2">
+                    <img src="img/brand logo 5.png" class="w-100 brand-logo-2" alt="brand logo">
+                </div>
+
+                <div class="col-2">
+                    <img src="img/brand logo 6.png" class="w-100 brand-logo-2" alt="brand logo">
+                </div>
+
+                <div class="col-2">
+                    <img src="img/brand logo 7.png" class="w-100 brand-logo-2" alt="brand logo">
+                </div>
+
+                <div class="col-2">
+                    <img src="img/brand logo 8.png" class="w-100 brand-logo-2" alt="brand logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ctnr-3 ctnr-padding">
+        <p class="ctnr-3-heading mt-5 text-center">now choose your savings pakage</p>
+
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-8 mx-auto ctnr-3-mb p-5 bg-light">
+                    <div class="col-12 ctnr-3-mb-pic">
+                        <img src="img/ctnr_3_pic.png" class="w-100" alt="ctnr 3 pic">
+                    </div>
+
+                    <p class="ctnr-3-heading-2 mt-5 text-center">6 boxes of sugar balance</p>
+                    <p class="ctnr-3-text text-center">$199.00 <span>(save $595.00)</span></p>
+                    <p class="ctnr-2-heading-des text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut corporis rem commodi quasi, vero adipisci ducimus iusto quas quibusdam et.</p>
+
+                    <button class="ctnr-3-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>order now</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-8 mx-auto ctnr-3-mb p-5 bg-light">
+                    <div class="col-12 ctnr-3-mb-pic">
+                        <img src="img/ctnr_3_pic.png" class="w-100" alt="ctnr 3 pic">
+                    </div>
+
+                    <p class="ctnr-3-heading-2 mt-5 text-center">6 boxes of sugar balance</p>
+                    <p class="ctnr-3-text text-center">$199.00 <span>(save $595.00)</span></p>
+                    <p class="ctnr-2-heading-des text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut corporis rem commodi quasi, vero adipisci ducimus iusto quas quibusdam et.</p>
+
+                    <button class="ctnr-3-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>order now</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-8 mx-auto ctnr-3-mb p-5 bg-light">
+                    <div class="col-12 ctnr-3-mb-pic">
+                        <img src="img/ctnr_3_pic.png" class="w-100" alt="ctnr 3 pic">
+                    </div>
+
+                    <p class="ctnr-3-heading-2 mt-5 text-center">6 boxes of sugar balance</p>
+                    <p class="ctnr-3-text text-center">$199.00 <span>(save $595.00)</span></p>
+                    <p class="ctnr-2-heading-des text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut corporis rem commodi quasi, vero adipisci ducimus iusto quas quibusdam et.</p>
+
+                    <button class="ctnr-3-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>order now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ctnr-4 ctnr-padding">
+        <p class="ctnr-2-heading mt-5 text-center">other important page</p>
+
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-8 mx-auto ctnr-4-mb p-5 bg-light">
+                    <div class="col-12 ctnr-4-mb-pic">
+                        <img src="img/ctnr_4_pic.png" class="w-100" alt="ctnr 3 pic">
+                    </div>
+
+                    <p class="ctnr-3-text text-center mt-5">private policy</p>
+                    <p class="ctnr-2-heading-des text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut corporis rem commodi quasi, vero adipisci ducimus iusto quas quibusdam et.</p>
+
+                    <button class="ctnr-3-btn">
+                        <span>read more</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-8 mx-auto ctnr-4-mb p-5 bg-light">
+                    <div class="col-12 ctnr-4-mb-pic">
+                        <img src="img/ctnr_4_pic.png" class="w-100" alt="ctnr 3 pic">
+                    </div>
+
+                    <p class="ctnr-3-text text-center mt-5">private policy</p>
+                    <p class="ctnr-2-heading-des text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut corporis rem commodi quasi, vero adipisci ducimus iusto quas quibusdam et.</p>
+
+                    <button class="ctnr-3-btn">
+                        <span>read more</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-8 mx-auto ctnr-4-mb p-5 bg-light">
+                    <div class="col-12 ctnr-4-mb-pic">
+                        <img src="img/ctnr_4_pic.png" class="w-100" alt="ctnr 3 pic">
+                    </div>
+
+                    <p class="ctnr-3-text text-center mt-5">private policy</p>
+                    <p class="ctnr-2-heading-des text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut corporis rem commodi quasi, vero adipisci ducimus iusto quas quibusdam et.</p>
+
+                    <button class="ctnr-3-btn">
+                        <span>read more</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer ctnr-padding">
+        <div class="container">
+            <p class="ctnr-1-heading-des text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+                molestias tempora nam fugiat porro. Reprehenderit fugiat, magnam ducimus cumque numquam laborum nobis
+                eligendi. Neque tempora aliquam aperiam necessitatibus eligendi voluptatem, repellat rem aliquid quod
+                similique, distinctio nam. Qui pariatur voluptates facilis veritatis repudiandae, veniam debitis alias
+                id consectetur, maiores, illo placeat delectus! Quasi a quae consectetur, doloremque non, reprehenderit
+                sunt dolore perferendis vitae veritatis deleniti. Esse sed possimus enim optio, cum quod dolores magni
+                vitae ad animi ullam aliquid deleniti accusantium iure suscipit voluptatem similique sequi id libero
+                neque! Sit provident quos, itaque facere odio eveniet rem animi harum consequuntur?</p>
+
+            <div class="col-12 text-center mt-5 mb-5">
+                <a href="" class="footer-page">
+                    <span>home - </span>
+                </a>
+
+                <a href="" class="footer-page">
+                    <span>review - </span>
+                </a>
+
+                <a href="" class="footer-page">
+                    <span>faq - </span>
+                </a>
+
+                <a href="" class="footer-page">
+                    <span>guarantee - </span>
+                </a>
+
+                <a href="" class="footer-page">
+                    <span>disclaimer - </span>
+                </a>
+
+                <a href="" class="footer-page">
+                    <span>contact</span>
+                </a>
+            </div>
+
+            <p class="author text-center">Copyrights all rights reserved. This template is designed by Taha Ahmed</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
